@@ -1,0 +1,15 @@
+{
+  "name": "bibtex-loader",
+  "version": "1.0.0",
+  "description": "A webpack loader for BibTeX files",
+  "main": "loader.js",
+  "files": [
+    "loader.js"
+  ],
+  "repository": "github:hubgit/bibtex-loader",
+  "author": "Alf Eaton",
+  "license": "MIT",
+  "dependencies": {
+    "biblatex-csl-converter": "^1.6.7"
+  }
+}

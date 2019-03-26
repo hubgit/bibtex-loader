@@ -1,24 +1,11 @@
-const { BibLatexParser, CSLExporter } = require("biblatex-csl-converter");
+const { Cite } = require('@citation-js/core')
+require('@citation-js/plugin-bibtex')
 
 module.exports = function(source) {
-  const parser = new BibLatexParser(source, {
-    processUnexpected: true,
-    processUnknown: true
+  const cite = new Cite(source, {
+    forceType: '@bibtex/text',
+    generateGraph: false,
   });
 
-  const data = parser.parse();
-
-  // TODO: handle errors?
-
-  const exporter = new CSLExporter(data.entries);
-
-  const output = exporter.parse();
-
-  // TODO: handle errors?
-
-  const items = Object.values(output);
-
-  // TODO: entry_key as id?
-
-  return `module.exports = ${JSON.stringify(items)}`;
+  return `module.exports = ${JSON.stringify(cite.get())}`;
 };

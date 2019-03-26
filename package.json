@@ -10,6 +10,13 @@
   "author": "Alf Eaton",
   "license": "MIT",
   "dependencies": {
-    "biblatex-csl-converter": "^1.6.7"
+    "@citation-js/core": "^0.4.0-rc.4",
+    "@citation-js/plugin-bibtex": "^0.4.0-rc.4"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0"
+  },
+  "scripts": {
+    "test": "jest loader.test.js"
   }
 }

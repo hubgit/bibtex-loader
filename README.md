@@ -1,3 +1,3 @@
 # bibtex-loader
 
-A webpack loader for BibTeX files, using [biblatex-csl-converter](https://github.com/fiduswriter/biblatex-csl-converter).
+A webpack loader for BibTeX files, using [citation-js](https://citation.js.org/).

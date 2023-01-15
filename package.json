@@ -10,11 +10,11 @@
   "author": "Alf Eaton",
   "license": "MIT",
   "dependencies": {
-    "@citation-js/core": "^0.4.0-rc.4",
-    "@citation-js/plugin-bibtex": "^0.4.0-rc.4"
+    "@citation-js/core": "^0.6.5",
+    "@citation-js/plugin-bibtex": "^0.6.5"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^29.3.1"
   },
   "scripts": {
     "test": "jest loader.test.js"
